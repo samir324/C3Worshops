@@ -8,6 +8,10 @@ function addFavoriteBook(bookName) {
     } else {
         console.log("It already exists");
     }
+    for(let i=0; i <num; i++){
+        favoriteBooks[i] =String(favoriteBooks[i]); // forsé tout les element du favoriteBooks est converté string 
+        console.log(typeof favoriteBooks[i] );
+    }
     function  printFavoriteBooks(){
         var num = favoriteBooks.length;
         console.log('livres  favoris:' + '' + num );
